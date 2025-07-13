@@ -1,0 +1,62 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="mobile-header">
+    <div class="logo-block">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <h1>Simple E-Commerce</h1>
+    </div>
+    <button id="toggle-lang">
+      <i class="fa-solid fa-toggle-on"></i>
+      <span id="lang-label">हिंदी</span>
+    </button>
+  </header>
+
+  <!-- Categories -->
+<div class="categories">
+  <div class="category" data-category="Buckles">
+    <i class="fa-solid fa-truck"></i>
+    <span class="cat-text">Buckles</span>
+  </div>
+  <div class="category" data-category="Items">
+    <i class="fa-solid fa-handshake"></i>
+    <span class="cat-text">Items</span>
+  </div>
+  <div class="category" data-category="Keychains">
+    <i class="fa-solid fa-key"></i>
+    <span class="cat-text">Keychains</span>
+  </div>
+  <div class="category" data-category="Work">
+    <i class="fa-solid fa-briefcase"></i>
+    <span class="cat-text">Work</span>
+  </div>
+
+  <!-- Modal for image preview -->
+<div id="image-modal" class="image-modal">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+
+</div>
+
+
+  <!-- Product Container -->
+  <div class="products" id="product-container"></div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919324159254" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
